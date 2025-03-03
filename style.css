@@ -1,0 +1,16 @@
+button{
+    padding: 10px 15px;
+    background-color: rgb(234, 161, 172);
+}
+
+button:active{
+    background-color: rgb(163, 128, 133);
+}
+
+#taskInput{
+    padding: 10px;
+}
+
+.noTasks{
+    color: grey;
+}
