@@ -27,7 +27,12 @@ function displayTask(task){
     const taskElement = document.createElement('div');
     taskElement.textContent = task;
     tasksContainer.appendChild(taskElement);
+    const checkbox = document.createElement('input');
+    checkbox.setAttribute("type", "checkbox");
+    taskElement.appendChild(checkbox);
 }
+
+
 
 function loadTasks(){
 const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
