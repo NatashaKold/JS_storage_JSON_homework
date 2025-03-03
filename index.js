@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
 const taskInput = document.getElementById('taskInput');
 const addButton = document.querySelector('.addButton');
 const clearButton = document.querySelector('.clearButton');
-const tasksContainer= document.querySelector('tasksContainer');
+const tasksContainer= document.querySelector('.tasksContainer');
 
 
 loadTasks();
@@ -38,6 +38,6 @@ tasks.forEach(function(task){
 
 clearButton.addEventListener('click', function(){
     localStorage.clear();
-    tasks=[];
+    tasksContainer.innerHTML = '';
 })
 })
