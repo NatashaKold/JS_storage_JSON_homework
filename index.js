@@ -32,8 +32,6 @@ function displayTask(task){
     taskElement.appendChild(checkbox);
 }
 
-
-
 function loadTasks(){
 const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 tasks.forEach(function(task){
@@ -42,7 +40,7 @@ tasks.forEach(function(task){
 }
 
 clearButton.addEventListener('click', function(){
-    localStorage.clear();
+    localStorage.removeItem('tasks');
     tasksContainer.innerHTML = '';
 })
 })
